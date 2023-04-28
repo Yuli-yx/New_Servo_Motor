@@ -329,8 +329,6 @@ __weak uint16_t PWMC_SetPhaseVoltage(PWMC_Handle_t *pHandle, alphabeta_t Valfa_b
         pHandle->CntPhC -= pHandle->DTCompCnt;
       }
     }
-
-    CntPhA = pHandle->CntPhA;
     returnValue = pHandle->pFctSetADCSampPointSectX(pHandle);
 #ifdef NULL_PTR_PWR_CUR_FDB
   }

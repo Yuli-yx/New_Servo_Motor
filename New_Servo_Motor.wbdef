@@ -120,8 +120,8 @@
         <define key="TF_KPDIV" value="512" />
         <define key="TF_KIDIV" value="2048" />
         <define key="TF_KDDIV" value="8192" />
-        <define key="PID_SPEED_KP_DEFAULT" value="3845" />
-        <define key="PID_SPEED_KI_DEFAULT" value="3872" />
+        <define key="PID_SPEED_KP_DEFAULT" value="400" />
+        <define key="PID_SPEED_KI_DEFAULT" value="30" />
         <define key="PID_SPEED_KD_DEFAULT" value="0" />
         <define key="SP_KPDIV" value="128" />
         <define key="SP_KIDIV" value="256" />
