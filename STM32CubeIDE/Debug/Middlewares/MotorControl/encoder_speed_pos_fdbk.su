@@ -1,0 +1,6 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:61:13:ENC_Init	4	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:116:13:ENC_Clear	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:144:16:ENC_CalcAngle	4	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:202:13:ENC_CalcAvrgMecSpeedUnit	20	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:358:13:ENC_SetMecAngle	4	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/encoder_speed_pos_fdbk.c:398:14:ENC_IRQHandler	0	static

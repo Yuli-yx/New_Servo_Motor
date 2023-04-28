@@ -1,0 +1,2 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c:45:13:startTimers	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pwm_common.c:78:13:waitForPolarizationEnd	16	static

@@ -1,0 +1,8 @@
+flux_weakening_ctrl.c:58:13:FW_Init	1
+flux_weakening_ctrl.c:81:13:FW_Clear	1
+flux_weakening_ctrl.c:112:13:FW_CalcCurrRef	5
+flux_weakening_ctrl.c:210:13:FW_DataProcess	1
+flux_weakening_ctrl.c:258:13:FW_SetVref	1
+flux_weakening_ctrl.c:281:17:FW_GetVref	1
+flux_weakening_ctrl.c:298:16:FW_GetAvVAmplitude	1
+flux_weakening_ctrl.c:314:17:FW_GetAvVPercentage	1

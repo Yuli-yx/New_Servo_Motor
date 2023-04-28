@@ -1,0 +1,5 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/main.c:714:13:startMediumFrequencyTask	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/main.c:175:6:SystemClock_Config	88	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/main.c:89:5:main	192	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/main.c:733:6:HAL_TIM_PeriodElapsedCallback	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/main.c:750:6:Error_Handler	0	static,ignoring_inline_asm

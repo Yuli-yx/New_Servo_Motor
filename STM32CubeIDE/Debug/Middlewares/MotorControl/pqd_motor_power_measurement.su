@@ -1,0 +1,3 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c:65:13:PQD_CalcElMotorPower	4	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c:97:13:PQD_Clear	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/pqd_motor_power_measurement.c:122:14:PQD_GetAvrgElMotorPowerW	16	static

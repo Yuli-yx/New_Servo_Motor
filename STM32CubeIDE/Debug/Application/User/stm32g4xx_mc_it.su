@@ -1,0 +1,8 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:83:6:ADC1_2_IRQHandler	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:115:6:TIM1_UP_TIM16_IRQHandler	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:128:6:TIM1_BRK_TIM15_IRQHandler	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:164:6:TIM2_IRQHandler	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:205:6:DMA1_Channel1_IRQHandler	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:233:6:USART2_IRQHandler	8	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:307:6:HardFault_Handler	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/stm32g4xx_mc_it.c:328:6:EXTI15_10_IRQHandler	0	static

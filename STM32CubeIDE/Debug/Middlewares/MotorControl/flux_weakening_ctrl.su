@@ -1,0 +1,8 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:58:13:FW_Init	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:81:13:FW_Clear	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:112:13:FW_CalcCurrRef	40	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:210:13:FW_DataProcess	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:258:13:FW_SetVref	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:281:17:FW_GetVref	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:298:16:FW_GetAvVAmplitude	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/flux_weakening_ctrl.c:314:17:FW_GetAvVPercentage	0	static

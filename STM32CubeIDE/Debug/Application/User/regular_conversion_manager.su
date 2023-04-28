@@ -1,0 +1,10 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:205:9:RCM_RegisterRegConv	12	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:168:9:RCM_RegisterRegConv_WithCB	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:313:10:RCM_ExecRegularConv	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:430:6:RCM_RequestUserConv	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:455:10:RCM_GetUserConv	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:477:6:RCM_ExecUserConv	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:517:21:RCM_GetUserConvState	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:539:6:RCM_PauseRegularConv	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:585:6:RCM_ExecNextConv	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/regular_conversion_manager.c:627:6:RCM_ReadOngoingConv	8	static

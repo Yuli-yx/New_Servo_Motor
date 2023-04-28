@@ -1,0 +1,6 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:115:7:pvPortMalloc	24	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:266:6:vPortFree	16	static,ignoring_inline_asm
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:315:8:xPortGetFreeHeapSize	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:321:8:xPortGetMinimumEverFreeHeapSize	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:327:6:vPortInitialiseBlocks	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:442:6:vPortGetHeapStats	24	static

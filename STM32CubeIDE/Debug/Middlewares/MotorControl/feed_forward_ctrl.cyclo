@@ -1,0 +1,10 @@
+feed_forward_ctrl.c:94:13:FF_Init	1
+feed_forward_ctrl.c:124:13:FF_Clear	1
+feed_forward_ctrl.c:150:13:FF_VqdffComputation	4
+feed_forward_ctrl.c:221:13:FF_VqdConditioning	1
+feed_forward_ctrl.c:266:13:FF_DataProcess	1
+feed_forward_ctrl.c:314:13:FF_InitFOCAdditionalMethods	1
+feed_forward_ctrl.c:340:13:FF_SetFFConstants	1
+feed_forward_ctrl.c:368:26:FF_GetFFConstants	1
+feed_forward_ctrl.c:397:13:FF_GetVqdff	1
+feed_forward_ctrl.c:422:13:FF_GetVqdAvPIout	1

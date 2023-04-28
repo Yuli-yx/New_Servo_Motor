@@ -1,0 +1,17 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:144:16:STO_CR_CalcElAngle	56	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:447:13:STO_CR_CalcAvrgMecSpeedUnit	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:612:13:STO_CR_Clear	24	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:88:13:STO_CR_Init	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:713:13:STO_CR_IsObserverConverged	4	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:833:20:STO_CR_GetEstimatedBemf	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:859:20:STO_CR_GetEstimatedCurrent	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:898:13:STO_CR_GetObserverGains	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:922:13:STO_CR_SetObserverGains	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:956:13:STO_CR_CalcAvrgElSpeedDpp	12	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1035:16:STO_CR_GetEstimatedBemfLevel	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1049:16:STO_CR_GetObservedBemfLevel	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1063:13:STO_CR_BemfConsistencyCheckSwitch	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1084:13:STO_CR_IsBemfConsistent	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1101:13:STO_CR_IsSpeedReliable	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1123:13:STO_CR_ForceConvergency1	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/MCSDK_v6.1.1-Full/MotorControl/MCSDK/MCLib/Any/Src/sto_cordic_speed_pos_fdbk.c:1144:13:STO_CR_ForceConvergency2	0	static

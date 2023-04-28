@@ -1,0 +1,6 @@
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:92:13:HALL_Init	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:201:13:HALL_Clear	8	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:267:16:HALL_CalcElAngle	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:315:13:HALL_CalcAvrgMecSpeedUnit	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:405:14:HALL_TIMx_CC_IRQHandler	16	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/hall_speed_pos_fdbk.c:746:14:HALL_TIMx_UP_IRQHandler	8	static

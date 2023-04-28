@@ -1,0 +1,17 @@
+sto_cordic_speed_pos_fdbk.c:144:16:STO_CR_CalcElAngle	20
+sto_cordic_speed_pos_fdbk.c:447:13:STO_CR_CalcAvrgMecSpeedUnit	14
+sto_cordic_speed_pos_fdbk.c:612:13:STO_CR_Clear	2
+sto_cordic_speed_pos_fdbk.c:88:13:STO_CR_Init	3
+sto_cordic_speed_pos_fdbk.c:713:13:STO_CR_IsObserverConverged	13
+sto_cordic_speed_pos_fdbk.c:833:20:STO_CR_GetEstimatedBemf	1
+sto_cordic_speed_pos_fdbk.c:859:20:STO_CR_GetEstimatedCurrent	1
+sto_cordic_speed_pos_fdbk.c:898:13:STO_CR_GetObserverGains	1
+sto_cordic_speed_pos_fdbk.c:922:13:STO_CR_SetObserverGains	1
+sto_cordic_speed_pos_fdbk.c:956:13:STO_CR_CalcAvrgElSpeedDpp	3
+sto_cordic_speed_pos_fdbk.c:1035:16:STO_CR_GetEstimatedBemfLevel	1
+sto_cordic_speed_pos_fdbk.c:1049:16:STO_CR_GetObservedBemfLevel	1
+sto_cordic_speed_pos_fdbk.c:1063:13:STO_CR_BemfConsistencyCheckSwitch	1
+sto_cordic_speed_pos_fdbk.c:1084:13:STO_CR_IsBemfConsistent	1
+sto_cordic_speed_pos_fdbk.c:1101:13:STO_CR_IsSpeedReliable	1
+sto_cordic_speed_pos_fdbk.c:1123:13:STO_CR_ForceConvergency1	1
+sto_cordic_speed_pos_fdbk.c:1144:13:STO_CR_ForceConvergency2	1
