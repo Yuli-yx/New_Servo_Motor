@@ -148,6 +148,7 @@ typedef struct
 } MCI_Handle_t;
 
 /* Exported functions ------------------------------------------------------- */
+uint16_t MCI_GetCntPhA(void);
 void MCI_Init( MCI_Handle_t * pHandle, SpeednTorqCtrl_Handle_t * pSTC, pFOCVars_t pFOCVars, PWMC_Handle_t *pPWMHandle );
 void MCI_ExecBufferedCommands( MCI_Handle_t * pHandle );
 void MCI_ExecSpeedRamp( MCI_Handle_t * pHandle,  int16_t hFinalSpeed, uint16_t hDurationms );
