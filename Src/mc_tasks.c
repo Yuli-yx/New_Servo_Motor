@@ -95,6 +95,50 @@ bool TSK_StopPermanencyTimeHasElapsedM1(void);
 void TSK_SafetyTask_PWMOFF(uint8_t motor);
 
 /* USER CODE BEGIN Private Functions */
+
+/*
+
+
+  qd_t Iqd, Vqd;
+  ab_t Iab;
+  alphabeta_t Ialphabeta, Valphabeta;
+  int16_t hElAngle;
+  uint16_t hCodeError;
+  SpeednPosFdbk_Handle_t *speedHandle;
+  speedHandle = STC_GetSpeedSensor(pSTC[M1]);
+  hElAngle = SPD_GetElAngle(speedHandle);
+  PWMC_GetPhaseCurrents(pwmcHandle[M1], &Iab);
+  RCM_ReadOngoingConv();
+  RCM_ExecNextConv();
+  Ialphabeta = MCM_Clarke(Iab);
+//  Iqd = MCM_Park(Ialphabeta, hElAngle);
+  Iqd = MCM_Park(Ialphabeta, hVolAngle);	//for test
+  Vqd.q = PI_Controller(pPIDIq[M1], (int32_t)(FOCVars[M1].Iqdref.q) - Iqd.q);
+  Vqd.d = PI_Controller(pPIDId[M1], (int32_t)(FOCVars[M1].Iqdref.d) - Iqd.d);
+  // Vqd.q = 10000;
+  // Vqd.d = 0;
+   hVolAngle += (int16_t)(10 * (int32_t)HALL_M1._Super.DPPConvFactor /
+                           (SPEED_UNIT * (int32_t)HALL_M1._Super.hMeasurementFrequency));
+  Vqd = Circle_Limitation(&CircleLimitationM1, Vqd);
+  hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*REV_PARK_ANGLE_COMPENSATION_FACTOR;
+  Valphabeta = MCM_Rev_Park(Vqd, hVolAngle);
+//  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
+  hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
+  // Vqd.d = CntPhA;
+  FOCVars[M1].Vqd = Vqd;
+  FOCVars[M1].Vqd.q = hVolAngle;	//for test by maskluo
+  FOCVars[M1].Iab = Iab;
+  FOCVars[M1].Ialphabeta = Ialphabeta;
+  FOCVars[M1].Iqd = Iqd;
+  FOCVars[M1].Valphabeta = Valphabeta;
+  FOCVars[M1].hElAngle = hElAngle;
+
+  return(hCodeError);
+
+ */
+
+
+
 /**
  * @brief This function implements the major tasks of the Motor Control and takes over the 
  *       control of the motor workbench. The task is executed periodically and has highest
@@ -761,20 +805,22 @@ inline uint16_t FOC_CurrControllerM1(void)
   RCM_ReadOngoingConv();
   RCM_ExecNextConv();
   Ialphabeta = MCM_Clarke(Iab);
-  Iqd = MCM_Park(Ialphabeta, hElAngle);
+//  Iqd = MCM_Park(Ialphabeta, hElAngle);
+  Iqd = MCM_Park(Ialphabeta, hVolAngle);	//for test
   Vqd.q = PI_Controller(pPIDIq[M1], (int32_t)(FOCVars[M1].Iqdref.q) - Iqd.q);
   Vqd.d = PI_Controller(pPIDId[M1], (int32_t)(FOCVars[M1].Iqdref.d) - Iqd.d);
-  Vqd.q = 10000;
-  Vqd.d = 0;
-  hVolAngle += (int16_t)(200 * (int32_t)HALL_M1._Super.DPPConvFactor /
-                          (SPEED_UNIT * (int32_t)HALL_M1._Super.hMeasurementFrequency));
+  // Vqd.q = 10000;
+  // Vqd.d = 0;
+   hVolAngle += (int16_t)(10 * (int32_t)HALL_M1._Super.DPPConvFactor /
+                           (SPEED_UNIT * (int32_t)HALL_M1._Super.hMeasurementFrequency));
   Vqd = Circle_Limitation(&CircleLimitationM1, Vqd);
   hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*REV_PARK_ANGLE_COMPENSATION_FACTOR;
   Valphabeta = MCM_Rev_Park(Vqd, hVolAngle);
 //  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
   hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
-  Vqd.d = CntPhA;
+  // Vqd.d = CntPhA;
   FOCVars[M1].Vqd = Vqd;
+  FOCVars[M1].Vqd.q = hVolAngle;	//for test by maskluo
   FOCVars[M1].Iab = Iab;
   FOCVars[M1].Ialphabeta = Ialphabeta;
   FOCVars[M1].Iqd = Iqd;

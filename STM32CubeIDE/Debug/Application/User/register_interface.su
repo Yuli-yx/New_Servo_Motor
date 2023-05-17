@@ -1,4 +1,4 @@
 C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:37:16:RI_SetRegCommandParser	56	static
 C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:111:16:RI_GetRegCommandParser	104	static
-C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:1037:9:RI_GetIDSize	0	static
-C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:1071:16:RI_GetPtrReg	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:1030:9:RI_GetIDSize	0	static
+C:/Users/zhuyi/Projects/MotorDrive_Undergrad/New_Servo_Motor/Src/register_interface.c:1064:16:RI_GetPtrReg	0	static
