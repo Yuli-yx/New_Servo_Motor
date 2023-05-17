@@ -75,7 +75,9 @@ static volatile uint16_t hStopPermanencyCounterM1 = ((uint16_t)0);
 static volatile uint8_t bMCBootCompleted = ((uint8_t)0);
 
 /* USER CODE BEGIN Private Variables */
+extern uint16_t CntPhA;
 int16_t Current_Phase;
+static volatile int16_t hVolAngle = ((int16_t)0);
 /* USER CODE END Private Variables */
 
 /* Private functions ---------------------------------------------------------*/
@@ -762,11 +764,16 @@ inline uint16_t FOC_CurrControllerM1(void)
   Iqd = MCM_Park(Ialphabeta, hElAngle);
   Vqd.q = PI_Controller(pPIDIq[M1], (int32_t)(FOCVars[M1].Iqdref.q) - Iqd.q);
   Vqd.d = PI_Controller(pPIDId[M1], (int32_t)(FOCVars[M1].Iqdref.d) - Iqd.d);
+  Vqd.q = 10000;
+  Vqd.d = 0;
+  hVolAngle += (int16_t)(200 * (int32_t)HALL_M1._Super.DPPConvFactor /
+                          (SPEED_UNIT * (int32_t)HALL_M1._Super.hMeasurementFrequency));
   Vqd = Circle_Limitation(&CircleLimitationM1, Vqd);
   hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*REV_PARK_ANGLE_COMPENSATION_FACTOR;
-  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
+  Valphabeta = MCM_Rev_Park(Vqd, hVolAngle);
+//  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
   hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
-
+  Vqd.d = CntPhA;
   FOCVars[M1].Vqd = Vqd;
   FOCVars[M1].Iab = Iab;
   FOCVars[M1].Ialphabeta = Ialphabeta;

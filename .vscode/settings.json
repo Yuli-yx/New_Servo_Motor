@@ -4,6 +4,7 @@
     "stm32-for-vscode.armToolchainPath": false,
     "files.associations": {
         "*.txt": "cmake",
-        "register_interface.h": "c"
+        "register_interface.h": "c",
+        "compare": "c"
     }
 }
