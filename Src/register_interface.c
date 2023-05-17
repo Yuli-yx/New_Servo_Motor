@@ -287,7 +287,7 @@ uint8_t RI_SetReg (uint16_t dataID, uint8_t * data, uint16_t *size, int16_t data
           case MC_REG_I_BETA_MEAS:
           case MC_REG_I_Q_MEAS:
           case MC_REG_I_D_MEAS:
-          case MC_REG_CntPhA:
+
           case MC_REG_FLUXWK_BUS_MEAS:
           {
             retVal = MCP_ERROR_RO_REG;
@@ -778,13 +778,6 @@ uint8_t RI_GetReg (uint16_t dataID, uint8_t * data, uint16_t *size, int16_t free
               break;
             }
 
-//            #TODO: add regs for duty cycle counts.
-            case MC_REG_CntPhA:
-            {
-              *regdataU16 = MCI_GetCntPhA();
-              break;
-            }
-
             default:
             {
               retVal = MCP_ERROR_UNKNOWN_REG;
@@ -1094,10 +1087,6 @@ __weak uint8_t RI_GetPtrReg(uint16_t dataID, void **dataPtr)
       {
         switch (regID)
         {
-          case MC_REG_CntPhA:
-          {
-            *dataPtr = &CntPhA;
-          }
           case MC_REG_I_A:
           {
             *dataPtr = &(pMCIN->pFOCVars->Iab.a);
