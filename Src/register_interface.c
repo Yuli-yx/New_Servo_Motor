@@ -27,7 +27,7 @@
 #include "mcp_config.h"
 #include "mcpa.h"
 #include "mc_configuration_registers.h"
-extern uint16_t CntPhA;
+
 static PID_Handle_t *pPIDSpeed[NBR_OF_MOTORS] = { &PIDSpeedHandle_M1 };
 static HALL_Handle_t *pHallSensor[NBR_OF_MOTORS] = {&HALL_M1};
 

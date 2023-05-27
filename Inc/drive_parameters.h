@@ -64,11 +64,11 @@
 #define REGULATION_EXECUTION_RATE     1    /*!< FOC execution rate in
                                                            number of PWM cycles */
 /* Gains values for torque and flux control loops */
-#define PID_TORQUE_KP_DEFAULT         2550
-#define PID_TORQUE_KI_DEFAULT         3223
+#define PID_TORQUE_KP_DEFAULT         150
+#define PID_TORQUE_KI_DEFAULT         600
 #define PID_TORQUE_KD_DEFAULT         100
-#define PID_FLUX_KP_DEFAULT           2550
-#define PID_FLUX_KI_DEFAULT           3223
+#define PID_FLUX_KP_DEFAULT           150
+#define PID_FLUX_KI_DEFAULT           600
 #define PID_FLUX_KD_DEFAULT           100
 
 /* Torque/Flux control loop gains dividers*/
@@ -103,7 +103,7 @@
 #define IQMAX                          823
 
 /* Default settings */
-#define DEFAULT_CONTROL_MODE           MCM_SPEED_MODE
+#define DEFAULT_CONTROL_MODE           MCM_TORQUE_MODE
 #define DEFAULT_TARGET_SPEED_RPM       3000
 #define DEFAULT_TARGET_SPEED_UNIT      (DEFAULT_TARGET_SPEED_RPM*SPEED_UNIT/U_RPM)
 #define DEFAULT_TORQUE_COMPONENT       0

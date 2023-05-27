@@ -114,7 +114,7 @@
         <define key="HWV_PWM" value="DrivingHighAndLowSides" />
         <define key="OVERMODULATION" value="FALSE" />
         <define key="DISCONTINUOUS_PWM" value="FALSE" />
-        <define key="DEFAULT_CONTROL_MODE" value="STC_SPEED_MODE" />
+        <define key="DEFAULT_CONTROL_MODE" value="STC_TORQUE_MODE" />
         <define key="MTPA_ENABLING" value="DISABLE" />
         <define key="FEED_FORWARD_CURRENT_REG_ENABLING" value="DISABLE" />
         <define key="TF_KPDIV" value="512" />
@@ -137,12 +137,12 @@
         <define key="OFST" value="{0,0,0,0,0,0,0,0}" />
         <define key="SPEED_LOOP_FREQUENCY_HZ" value="1000" />
         <define key="POSITION_CTRL_ENABLING" value="DISABLE" />
-        <define key="PID_TORQUE_KP_DEFAULT" value="2550" />
-        <define key="PID_TORQUE_KI_DEFAULT" value="3223" />
+        <define key="PID_TORQUE_KP_DEFAULT" value="150" />
+        <define key="PID_TORQUE_KI_DEFAULT" value="600" />
         <define key="PID_TORQUE_KD_DEFAULT" value="100" />
         <define key="DEFAULT_TORQUE_COMPONENT" value="0" />
-        <define key="PID_FLUX_KP_DEFAULT" value="2550" />
-        <define key="PID_FLUX_KI_DEFAULT" value="3223" />
+        <define key="PID_FLUX_KP_DEFAULT" value="150" />
+        <define key="PID_FLUX_KI_DEFAULT" value="600" />
         <define key="PID_FLUX_KD_DEFAULT" value="100" />
         <define key="DEFAULT_FLUX_COMPONENT" value="0" />
         <define key="FLUX_WEAKENING_ENABLING" value="DISABLE" />

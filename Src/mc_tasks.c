@@ -242,8 +242,7 @@ __weak void MCboot( MCI_Handle_t* pMCIList[NBR_OF_MOTORS] )
     FOCVars[M1].Iqdref = STC_GetDefaultIqdref(pSTC[M1]);
     FOCVars[M1].UserIdref = STC_GetDefaultIqdref(pSTC[M1]).d;
     MCI_Init(&Mci[M1], pSTC[M1], &FOCVars[M1],pwmcHandle[M1] );
-    MCI_ExecSpeedRamp(&Mci[M1],
-    STC_GetMecSpeedRefUnitDefault(pSTC[M1]),0); /*First command to STC*/
+    MCI_ExecTorqueRamp(&Mci[M1], STC_GetDefaultIqdref(pSTC[M1]).q, 0);
     pMCIList[M1] = &Mci[M1];
 
     /* Applicative hook in MCBoot() */
@@ -805,8 +804,8 @@ inline uint16_t FOC_CurrControllerM1(void)
   RCM_ReadOngoingConv();
   RCM_ExecNextConv();
   Ialphabeta = MCM_Clarke(Iab);
-//  Iqd = MCM_Park(Ialphabeta, hElAngle);
-  Iqd = MCM_Park(Ialphabeta, hVolAngle);	//for test
+  Iqd = MCM_Park(Ialphabeta, hElAngle);
+//  Iqd = MCM_Park(Ialphabeta, hVolAngle);	//for test
   Vqd.q = PI_Controller(pPIDIq[M1], (int32_t)(FOCVars[M1].Iqdref.q) - Iqd.q);
   Vqd.d = PI_Controller(pPIDId[M1], (int32_t)(FOCVars[M1].Iqdref.d) - Iqd.d);
   // Vqd.q = 10000;
@@ -815,12 +814,12 @@ inline uint16_t FOC_CurrControllerM1(void)
                            (SPEED_UNIT * (int32_t)HALL_M1._Super.hMeasurementFrequency));
   Vqd = Circle_Limitation(&CircleLimitationM1, Vqd);
   hElAngle += SPD_GetInstElSpeedDpp(speedHandle)*REV_PARK_ANGLE_COMPENSATION_FACTOR;
-  Valphabeta = MCM_Rev_Park(Vqd, hVolAngle);
-//  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
+//  Valphabeta = MCM_Rev_Park(Vqd, hVolAngle);
+  Valphabeta = MCM_Rev_Park(Vqd, hElAngle);
   hCodeError = PWMC_SetPhaseVoltage(pwmcHandle[M1], Valphabeta);
   // Vqd.d = CntPhA;
   FOCVars[M1].Vqd = Vqd;
-  FOCVars[M1].Vqd.q = hVolAngle;	//for test by maskluo
+//  FOCVars[M1].Vqd.q = hVolAngle;	//for test by maskluo
   FOCVars[M1].Iab = Iab;
   FOCVars[M1].Ialphabeta = Ialphabeta;
   FOCVars[M1].Iqd = Iqd;

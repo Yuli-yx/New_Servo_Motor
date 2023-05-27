@@ -45,12 +45,6 @@
 #define round(x) ((x)>=0?(int32_t)((x)+0.5):(int32_t)((x)-0.5))
 
 /* Functions -----------------------------------------------*/
-extern uint16_t CntPhA;
-uint16_t MCI_GetCntPhA(void)
-{
-  return CntPhA;
-}
-
 
 /**
   * @brief  Initializes all the object variables, usually it has to be called

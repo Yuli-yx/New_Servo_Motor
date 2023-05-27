@@ -29,7 +29,6 @@
 #include "mc_math.h"
 #include "mc_type.h"
 
-uint16_t CntPhA;
 /** @addtogroup MCSDK
   * @{
   */
@@ -299,8 +298,6 @@ __weak uint16_t PWMC_SetPhaseVoltage(PWMC_Handle_t *pHandle, alphabeta_t Valfa_b
     pHandle->CntPhB = (uint16_t)(MAX(wTimePhB, 0));
     pHandle->CntPhC = (uint16_t)(MAX(wTimePhC, 0));
 
-    CntPhA = pHandle->CntPhA;
-
     if (1U == pHandle->DTTest)
     {
       /* Dead time compensation */
@@ -331,8 +328,6 @@ __weak uint16_t PWMC_SetPhaseVoltage(PWMC_Handle_t *pHandle, alphabeta_t Valfa_b
         pHandle->CntPhC -= pHandle->DTCompCnt;
       }
     }
-
-
     returnValue = pHandle->pFctSetADCSampPointSectX(pHandle);
 #ifdef NULL_PTR_PWR_CUR_FDB
   }
